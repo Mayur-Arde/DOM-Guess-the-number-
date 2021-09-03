@@ -44,6 +44,7 @@ document.querySelector('.again').addEventListener('click' , function(){
     secretNumber = Math.trunc(Math.random * 20 + 1);
 
     displayMessage('Start Guessing');
+    document.querySelector('.score').textContent = score;
     document.querySelector('.guess').value = "";
     document.querySelector('.number').textContent = '?';
     document.querySelector('body').style.backgroundColor = 'black';

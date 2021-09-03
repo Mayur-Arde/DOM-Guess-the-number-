@@ -18,7 +18,7 @@ document.querySelector('.check').addEventListener('click' , function(){
         console.log(`NO Number, please guess the number`);
     }
     else if (guess === secretNumber){
-        displayMessage('Hurray guess the number');
+        displayMessage('Hurray you guess the number');
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').textContent = secretNumber;
         document.querySelector('.number').style.width = '30rem';
@@ -45,7 +45,7 @@ document.querySelector('.again').addEventListener('click' , function(){
 
     displayMessage('Start Guessing');
     document.querySelector('.score').textContent = score;
-    document.querySelector('.guess').value = "";
+    document.querySelector('.guess').value = '';
     document.querySelector('.number').textContent = '?';
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('.number').style.width = '15rem';
